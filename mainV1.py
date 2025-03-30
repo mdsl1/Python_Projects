@@ -86,10 +86,12 @@ lista = [
     }
     # Teclado
     # Mouse
+    # Cabo mal encaixado
+
 ]
 
 # Variável global
-op = 0
+op = 100
 
 # Criando a janela principal
 root = tk.Tk()
@@ -113,19 +115,26 @@ tk.Label(frame, textvariable=tipo, font=("Arial", 11, "bold")).pack(side="left",
 # Função para alterar o valor da variável
 def definirValor(v):
     listaErros = ["Troca de head", "Configuração de head", "Formatação", "Hora/Data errada"]
-    global op 
+    global op
     op = v
     tipo.set(listaErros[v])  # Atualiza o texto no Label
     status.set("")
     print(f"Opção selecionada: {v}")  # Apenas para depuração
 
 def registrarOcorrencia():
-    status.set("Iniciando em 5 segundos...")
-    root.update_idletasks()  # Atualiza a interface antes de iniciar
+
+    if op == 100:
+        status.set("Selecione um valor")
+        root.update_idletasks()
+        return
+    else:
+        status.set("Iniciando em 5 segundos...")
+        root.update_idletasks()  # Atualiza a interface antes de iniciar
 
     root.after(5000, iniciarRegistro)  # Espera 5 segundos e chama a função iniciarRegistro
 
 def iniciarRegistro():
+    global op
     status.set("Processando...")
     root.update_idletasks()
 
@@ -205,24 +214,46 @@ def iniciarRegistro():
     root.update_idletasks()  # Atualiza a interface
     print("Concluído")
 
+    # Reseta o script para evitar dupla inserção
+    tipo.set("--Nenhum--")
+    root.update_idletasks()
+    op = 100
+
+
 # Criando os botões que alteram o valor do Label
 tk.Button(root, text="Troca de head", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(0)).pack(pady=5)
 tk.Button(root, text="Configuração de head", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(1)).pack(pady=5)
 tk.Button(root, text="Formatação", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(2)).pack(pady=5)
 tk.Button(root, text="Hora/Data Errado", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(3)).pack(pady=5)
 tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(4)).pack(pady=5)
-tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(4)).pack(pady=5)
-tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(4)).pack(pady=5)
-tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(4)).pack(pady=5)
-tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(4)).pack(pady=5)
-tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(4)).pack(pady=5)
-tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(4)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(5)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(6)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(7)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(8)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2,command=lambda: definirValor(9)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+tk.Button(root, text="Função", bg="#0b004b", fg="#fff", font=("Arial", 11), bd=2, command=lambda: definirValor(10)).pack(pady=5)
+
+
 
 # Botão que inicia o registro
 tk.Button(root, text="Registrar", bg="#0b004b", fg="#fff", font=("Arial", 12, "bold"), bd=3, command=registrarOcorrencia).pack(pady=10)
 
 # Label que vai indicar quando começar
-tk.Label(root, textvariable=status, bg="#3e2da1", font=("Arial", 11)).pack(pady=10)
+tk.Label(root, textvariable=status, bg="#3e2da1", fg="#fff", font=("Arial", 11)).pack(pady=10)
 
 # Inicia a interface
 root.mainloop()

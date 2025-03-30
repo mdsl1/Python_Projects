@@ -1,0 +1,176 @@
+[
+    {
+        "_comentario": "Troca de head",
+        "fato": "Head ruim",
+        "causa": "Desgaste",
+        "acao": "Troca",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 3
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "p",
+            "qtde": 2
+        },
+        "cid": "d",
+        "codigoResolucao": "t",
+        "anotacoes": "Head trocado e som configurado conforme solicitado."
+    },
+
+    {
+        "_comentario": "Configuração de head",
+        "fato": "Head desconfigurado",
+        "causa": "Desgaste",
+        "acao": "Configuração",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 3
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor": {
+            "tecla": "p",
+            "qtde": 2
+        },
+        "cid": "d",
+        "nomePraOutros": "Nenhum",
+        "codigoResolucao": "c",
+        "anotacoes": "Head configurado conforme solicitado."
+    },
+
+    {
+        "_comentario": "Troca de mouse",
+        "fato": "Mouse ruim",
+        "causa": "Desgaste",
+        "acao": "Troca",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 3
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "p",
+            "qtde": 2
+        },
+        "cid": "d",
+        "nomePraOutros": "Nenhum",
+        "codigoResolucao": "t",
+        "anotacoes": "Mouse trocado conforme solicitado."
+    },
+
+    {
+        "_comentario": "Troca de teclado",
+        "fato": "Teclado ruim",
+        "causa": "Desgaste",
+        "acao": "Troca",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 3
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "p",
+            "qtde": 2
+        },
+        "cid": "d",
+        "nomePraOutros": "Nenhum",
+        "codigoResolucao": "t",
+        "anotacoes": "Teclado trocado conforme solicitado."
+    },
+
+    {
+        "_comentario": "Formatação",
+        "fato": "Computador lento",
+        "causa": "Sistema operacional lento",
+        "acao": "Formatação",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 5
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "s",
+            "qtde": 2
+        },
+        "cid": "d",
+        "nomePraOutros": "Nenhum",
+        "codigoResolucao": "m",
+        "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
+    },
+
+    {
+        "_comentario": "Hora/Data errada",
+        "fato": "Hora/Data errada",
+        "causa": "Software",
+        "acao": "Ajuste de horário/ data",
+        "causaFinal":
+        {
+            "tecla": "c",
+            "qtde": 2
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "s",
+            "qtde": 2
+        },
+        "cid": "d",
+        "nomePraOutros": "Nenhum",
+        "codigoResolucao": "m",
+        "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
+    },
+
+    {
+        "_comentario": "Ajuste de cabo do monitor",
+        "fato": "Monitor desligando",
+        "causa": "Cabo mal encaixado",
+        "acao": "Ajuste do cabo",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 3
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "outros",
+            "qtde": 2
+        },
+        "cid": "d",
+        "nomePraOutros": "Cabo de energia/ Cabo VGA",
+        "codigoResolucao": "m",
+        "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
+    },
+
+    {
+        "_comentario": "Troca de cabo do monitor",
+        "fato": "Monitor desligando",
+        "causa": "Cabo com defeito",
+        "acao": "Troca do cabo",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 3
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "outros",
+            "qtde": 2
+        },
+        "cid": "d",
+        "nomePraOutros": "Cabo de energia/ Cabo VGA",
+        "codigoResolucao": "m",
+        "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
+    }
+
+]

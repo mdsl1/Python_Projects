@@ -142,7 +142,7 @@
         "areaOfensora": "Operação",
         "sistemaOfensor":
         {
-            "tecla": "outros",
+            "tecla": "o",
             "qtde": 2
         },
         "cid": "d",
@@ -164,13 +164,35 @@
         "areaOfensora": "Operação",
         "sistemaOfensor":
         {
-            "tecla": "outros",
+            "tecla": "o",
             "qtde": 2
         },
         "cid": "d",
         "nomePraOutros": "Cabo de energia/ Cabo VGA",
         "codigoResolucao": "m",
         "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
+    },
+
+    {
+        "_comentario": "Chamado Improcedente",
+        "fato": "Chamado incorreto",
+        "causa": "Desconhecido",
+        "acao": "Validação",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 6
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "-",
+            "qtde": 1
+        },
+        "cid": "d",
+        "nomePraOutros": "Nenhum",
+        "codigoResolucao": "n",
+        "anotacoes": "-- Descreva o que aconteceu --"
     }
 
 ]

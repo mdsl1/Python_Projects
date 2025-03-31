@@ -68,7 +68,7 @@ def iniciarRegistro():
     status.set("Processando...")
     root.update_idletasks()
 
-    pyaut.PAUSE = 0.1
+    pyaut.PAUSE = 0.2
 
     # Preenchimento do fato
     clip.copy(lista[op]["fato"])
@@ -128,17 +128,9 @@ def iniciarRegistro():
 
     # Preenchimento das anotações
     pyaut.press("tab")
-    clip.copy(lista[op]["anotacoes"])
-    pyaut.hotkey("ctrl", "v")
-    pyaut.press("enter")
-    pyaut.press("enter")
-
-    clip.copy("Se surgir alguma dúvida ou necessidade adicional, não hesite em entrar em contato. Estamos à disposição para ajudar!")
-    pyaut.hotkey("ctrl", "v")
-    pyaut.press("enter")
-    pyaut.press("enter")
-
-    clip.copy("Service Desk: 0800 400 4667")
+    clip.copy(lista[op]["anotacoes"] + "\n\n"
+    "Se surgir alguma dúvida ou necessidade adicional, não hesite em entrar em contato. Estamos à disposição para ajudar!" + "\n\n"
+    "Service Desk: 0800 400 4667")
     pyaut.hotkey("ctrl", "v")
 
     status.set("Concluído")

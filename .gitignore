@@ -1,0 +1,5 @@
+# Arquivos usados para compilar e criar executável do código
+*.spec
+*.iss
+/build
+/Versions

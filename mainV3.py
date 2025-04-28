@@ -6,7 +6,7 @@ import pyperclip as clip
 import tkinter as tk
 
 # Nessa versão os botões são divididos em duas colunas, é a melhor para otimizar espaço
-
+# Comando para compilar o programa e criar o executável: pyinstaller --onefile --windowed --add-data "dados.json;." mainV3.py
 # Caminho absoluto do JSON
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_PATH = os.path.join(BASE_DIR, "dados.json")
@@ -68,7 +68,7 @@ def iniciarRegistro():
     status.set("Processando...")
     root.update_idletasks()
 
-    pyaut.PAUSE = 0.2
+    pyaut.PAUSE = 0.3
 
     # Preenchimento do fato
     clip.copy(lista[op]["fato"])
@@ -91,9 +91,11 @@ def iniciarRegistro():
         pyaut.press(lista[op]["causaFinal"]["tecla"])
     pyaut.press("enter")
 
-    # Preenchimento da área ofensora
+    # Pulando vários campos até o próximo campo
     for i in range(4):
         pyaut.press("tab")
+    
+    # Preenchimento da área ofensora
     pyaut.press("tab")
     clip.copy(lista[op]["areaOfensora"])
     pyaut.hotkey("ctrl", "v")
@@ -123,7 +125,8 @@ def iniciarRegistro():
     # Preenchimento do código de resolução
     pyaut.press("tab")
     pyaut.press("space")
-    pyaut.press(lista[op]["codigoResolucao"])
+    for i in range(lista[op]["codigoResolucao"]["qtde"]):
+        pyaut.press(lista[op]["codigoResolucao"]["tecla"])
     pyaut.press("enter")
 
     # Preenchimento das anotações

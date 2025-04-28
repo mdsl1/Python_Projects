@@ -16,7 +16,11 @@
             "qtde": 2
         },
         "cid": "d",
-        "codigoResolucao": "t",
+        "codigoResolucao": 
+        {
+            "tecla": "t",
+            "qtde": 4
+        },
         "anotacoes": "Head trocado e som configurado conforme solicitado."
     },
 
@@ -37,7 +41,11 @@
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
-        "codigoResolucao": "c",
+        "codigoResolucao":
+        {
+            "tecla": "c",
+            "qtde": 1
+        },
         "anotacoes": "Head configurado conforme solicitado."
     },
 
@@ -59,7 +67,11 @@
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
-        "codigoResolucao": "t",
+        "codigoResolucao":
+        {
+            "tecla": "t",
+            "qtde": 4
+        },
         "anotacoes": "Mouse trocado conforme solicitado."
     },
 
@@ -81,7 +93,11 @@
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
-        "codigoResolucao": "t",
+        "codigoResolucao":
+        {
+            "tecla": "t",
+            "qtde": 4
+        },
         "anotacoes": "Teclado trocado conforme solicitado."
     },
 
@@ -93,17 +109,21 @@
         "causaFinal":
         {
             "tecla": "f",
-            "qtde": 5
+            "qtde": 3
         },
         "areaOfensora": "Operação",
         "sistemaOfensor":
         {
-            "tecla": "s",
-            "qtde": 2
+            "tecla": "o",
+            "qtde": 4
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
-        "codigoResolucao": "m",
+        "codigoResolucao":
+        {
+            "tecla": "m",
+            "qtde": 1
+        },
         "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
     },
 
@@ -120,12 +140,16 @@
         "areaOfensora": "Operação",
         "sistemaOfensor":
         {
-            "tecla": "s",
-            "qtde": 2
+            "tecla": "o",
+            "qtde": 4
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
-        "codigoResolucao": "m",
+        "codigoResolucao":
+        {
+            "tecla": "m",
+            "qtde": 1
+        },
         "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
     },
 
@@ -143,11 +167,15 @@
         "sistemaOfensor":
         {
             "tecla": "o",
-            "qtde": 2
+            "qtde": 5
         },
         "cid": "d",
         "nomePraOutros": "Cabo de energia/ Cabo VGA",
-        "codigoResolucao": "m",
+        "codigoResolucao":
+        {
+            "tecla": "m",
+            "qtde": 1
+        },
         "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
     },
 
@@ -165,11 +193,15 @@
         "sistemaOfensor":
         {
             "tecla": "o",
-            "qtde": 2
+            "qtde": 5
         },
         "cid": "d",
         "nomePraOutros": "Cabo de energia/ Cabo VGA",
-        "codigoResolucao": "m",
+        "codigoResolucao":
+        {
+            "tecla": "m",
+            "qtde": 1
+        },
         "anotacoes": "Conforme ajustado e testado no local, chamado está sendo finalizado."
     },
 
@@ -191,8 +223,38 @@
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
-        "codigoResolucao": "n",
+        "codigoResolucao":
+        {
+            "tecla": "n",
+            "qtde": 1
+        },
         "anotacoes": "-- Selecione o Sistema Ofensor e Descreva o que aconteceu --"
+    },
+
+    {
+        "_comentario": "Disco cheio",
+        "fato": "Disco cheio",
+        "causa": "Disco cheio",
+        "acao": "Limpeza de disco",
+        "causaFinal":
+        {
+            "tecla": "f",
+            "qtde": 5
+        },
+        "areaOfensora": "Operação",
+        "sistemaOfensor":
+        {
+            "tecla": "o",
+            "qtde": 4
+        },
+        "cid": "d",
+        "nomePraOutros": "Nenhum",
+        "codigoResolucao":
+        {
+            "tecla": "m",
+            "qtde": 1
+        },
+        "anotacoes": "Disco limpo e usuários excluídos conforme solicitado.."
     }
 
 ]

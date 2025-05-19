@@ -114,8 +114,8 @@
         "areaOfensora": "Operação",
         "sistemaOfensor":
         {
-            "tecla": "o",
-            "qtde": 4
+            "tecla": "s",
+            "qtde": 2
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
@@ -140,8 +140,8 @@
         "areaOfensora": "Operação",
         "sistemaOfensor":
         {
-            "tecla": "o",
-            "qtde": 4
+            "tecla": "s",
+            "qtde": 2
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
@@ -244,8 +244,8 @@
         "areaOfensora": "Operação",
         "sistemaOfensor":
         {
-            "tecla": "o",
-            "qtde": 4
+            "tecla": "s",
+            "qtde": 2
         },
         "cid": "d",
         "nomePraOutros": "Nenhum",
